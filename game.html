@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+a.right {
+   display: inline-block;
+   text-align: right;
+   width: 100%;
+}
+a:link:active {
+color:yellow;
+}
+a:link {
+color:red;
+}
+a:visited {
+  color:green;
+}
+button:hover{background-color:white;color:black;}
+button {background-color:#add8e6;font-family: Showcard Gothic;font-size: 30px;color:purple;}</style>
+<script>
+var num=Math.ceil(100*Math.random());
+//alert(num);
+function game(){
+	var a=prompt("Enter a Number between 0 and 100");
+	if(a>100 || a<0){
+		alert("You are not allowed to enter any number above 100 or below 0!!!");
+		game();
+	}
+	if(num>a){
+		alert("The Number You Chose is less than the number chose by computer!!!");
+		game();
+	}
+	else if(num<a){
+		alert("The Number You Chose is greater than the number chose by computer!!!");
+		game();
+	}
+	else{
+		alert("HURRAY YOU GOT THE CORRECT ANSWER!!!");
+		setTimeout("location.reload(true);");
+	}
+}
+</script></head>
+<body background="https://images.wallpaperscraft.com/image/clouds_dark_red_152426_1366x768.jpg">
+<center><font color="white" size="10" face="Goudy Stout">
+<u>WELCOME TO REFRESHMENT<br>CENTER</u>
+</font><br><br>
+<font color="yellow" size="+3" face="Jokerman">
+So basicly the programmer wants to relax you from your tidious work by playing a simple game whose rules are as follows--->
+</font></center>
+<font color="orange" size="+2" face="Lucida Handwriting">
+<ol><br>
+<li> On clicking the start button you will get a prompt box asking to Enter a number between 0-100.</li>
+<li> You Have to Enter the number and press return.</li>
+<li> If the number is greater/lesser than the number choosed by computer it will acknowledge you and ask you to Enter again.</li>
+<li> As soon as you guess the matching number you win the game.</li>
+<li> Test yourself and see how many guesses you take to guess a number.</li></ol>
+</font>
+<font size="+3" color="red" face="Lucida Handwriting">
+</font><a href="C:\Users\HP\Desktop\project\boool.htm" class="right">CLICK ME TO GO BACK</a><center>
+<button onclick="game()"><u>START</u></button><br><br><font color="white">&copylokeshrai2019@iiitkottayam.ac.in</center>
+</body></html>
